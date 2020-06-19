@@ -10,3 +10,8 @@ function downClick(textId) {
   if (value > 0) value--;
   text.value = value.toString();
 }
+function showAddCart() {
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+}
